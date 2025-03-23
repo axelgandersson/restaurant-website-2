@@ -1,0 +1,232 @@
+/* General Styles */
+body {
+  font-family: "Special Elite", monospace;
+  margin: 0;
+  padding: 0;
+  color: #000;
+  background-color: #fff;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Special Elite", monospace;
+  font-weight: bold;
+  margin: 1rem;
+  margin-top: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(45deg, #0a660ad0, #59b655c7);
+  color: #fff;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-icon {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(45deg, #ffd700, #ff8c00);
+  border-radius: 50%;
+  margin-right: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Updated Hero Section */
+.hero {
+  position: relative;
+  height: 100vh; /* Adjust as needed */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  position: relative;
+
+  padding: 20px;
+  border-radius: 5px;
+  color: #000000;
+}
+
+.hero-image {
+  position: relative;
+  background-image: url("../images/output.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Menu Section */
+.menu-filter {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.menu-filter button {
+  padding: 10px 20px;
+  background-color: #006400;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button,
+.menu-filter button {
+  font-family: "Special Elite", monospace;
+}
+
+.menu-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.menu-item {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Lunch Buffet Section */
+#lunch-buffet {
+  padding: 20px;
+  text-align: center;
+}
+
+#toggle-details {
+  padding: 10px 20px;
+  background-color: #ffd700;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Price List Section */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #006400;
+  color: #fff;
+}
+
+.social-media {
+  display: flex;
+  gap: 10px;
+}
+
+.social-media a {
+  color: #fff;
+  font-size: 24px;
+}
+
+.map iframe {
+  width: 100%;
+  height: 200px;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero-image,
+  .hero-content {
+    width: 100%;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+h2 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.cta-button {
+  display: flex;
+  margin-top: 2em;
+  justify-content: center;
+  color: #000000;
+  transition: color 0.7s ease;
+}
+
+.cta-button:hover {
+  color: #ff8c00;
+  cursor: pointer;
+}

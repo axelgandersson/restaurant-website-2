@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurang Gurka</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="icon" href="./images/icons8-cucumber-48.png" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <div class="logo-icon"></div>
+        <h1>GURKA. GURKA. GURKA.</h1>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#lunch-buffet">Lunch Buffet</a></li>
+          <li><a href="#price-list">Price List</a></li>
+        </ul>
+        <div class="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-image">
+        <!-- <img src="./images/output.jpg" alt="" /> -->
+      </div>
+      <div class="hero-content">
+        <h2>Welcome to Restaurang Gurka</h2>
+        <p>
+          At Restaurang Gurka, we celebrate the art of fine dining with a focus
+          on fresh, locally sourced ingredients. Our menu is inspired by global
+          flavors, crafted with passion and served with elegance. Join us for an
+          unforgettable culinary experience.
+        </p>
+        <a href="#menu" class="cta-button">View Menu</a>
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu">
+      <h2>Our Menu</h2>
+      <div class="menu-filter">
+        <button dataCategory="starters">Förrätter</button>
+        <button dataCategory="main-courses">Varmrätter</button>
+        <button dataCategory="desserts">Efterrätter</button>
+        <button dataCategory="all">Hela menyn</button>
+      </div>
+      <div class="menu-items">
+        <!-- Starters -->
+        <div class="menu-item" dataCategory="starters">
+          <h3>Grilled Octopus</h3>
+          <p>
+            Tender octopus with a smoky char, served with a lemon and herb
+            dressing.
+          </p>
+          <p>Price: 150 kr</p>
+          <p>Allergens: Seafood</p>
+        </div>
+        <div class="menu-item" dataCategory="starters">
+          <h3>Beef Tartare</h3>
+          <p>
+            Finely chopped beef with capers, shallots, and a quail egg yolk.
+          </p>
+          <p>Price: 180 kr</p>
+          <p>Allergens: Egg</p>
+        </div>
+        <div class="menu-item" dataCategory="starters">
+          <h3>Smoked Salmon</h3>
+          <p>Delicate smoked salmon served with dill and mustard sauce.</p>
+          <p>Price: 120 kr</p>
+          <p>Allergens: Seafood</p>
+        </div>
+        <div class="menu-item" dataCategory="starters">
+          <h3>Cauliflower Soup</h3>
+          <p>Rich and creamy cauliflower soup with truffle oil.</p>
+          <p>Price: 100 kr</p>
+          <p>Allergens: Dairy</p>
+        </div>
+
+        <!-- Main Courses -->
+        <div class="menu-item" dataCategory="main-courses">
+          <h3>Roast Chicken</h3>
+          <p>
+            Succulent roast chicken with seasonal vegetables and a rich gravy.
+          </p>
+          <p>Price: 250 kr</p>
+          <p>Allergens: None</p>
+        </div>
+        <div class="menu-item" dataCategory="main-courses">
+          <h3>Grilled Sea Bass</h3>
+          <p>
+            Fresh sea bass grilled to perfection, served with a lemon butter
+            sauce.
+          </p>
+          <p>Price: 280 kr</p>
+          <p>Allergens: Seafood, Dairy</p>
+        </div>
+        <div class="menu-item" dataCategory="main-courses">
+          <h3>Beef Wellington</h3>
+          <p>Classic beef wellington with mushroom duxelles and puff pastry.</p>
+          <p>Price: 350 kr</p>
+          <p>Allergens: Gluten, Dairy</p>
+        </div>
+        <div class="menu-item" dataCategory="main-courses">
+          <h3>Vegetable Risotto</h3>
+          <p>Creamy risotto with seasonal vegetables and parmesan cheese.</p>
+          <p>Price: 220 kr</p>
+          <p>Allergens: Dairy</p>
+        </div>
+
+        <!-- Desserts -->
+        <div class="menu-item" dataCategory="desserts">
+          <h3>Chocolate Fondant</h3>
+          <p>Rich and gooey chocolate fondant served with vanilla ice cream.</p>
+          <p>Price: 100 kr</p>
+          <p>Allergens: Dairy, Gluten</p>
+        </div>
+        <div class="menu-item" dataCategory="desserts">
+          <h3>Lemon Tart</h3>
+          <p>
+            Zesty lemon tart with a buttery crust, served with fresh berries.
+          </p>
+          <p>Price: 90 kr</p>
+          <p>Allergens: Dairy, Gluten</p>
+        </div>
+        <div class="menu-item" dataCategory="desserts">
+          <h3>Panna Cotta</h3>
+          <p>Silky panna cotta with a berry compote.</p>
+          <p>Price: 80 kr</p>
+          <p>Allergens: Dairy</p>
+        </div>
+        <div class="menu-item" dataCategory="desserts">
+          <h3>Apple Crumble</h3>
+          <p>Warm apple crumble with a crunchy topping, served with custard.</p>
+          <p>Price: 90 kr</p>
+          <p>Allergens: Gluten, Dairy</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lunch Buffet Section -->
+    <section id="lunch-buffet">
+      <h2>Lunch Buffet</h2>
+      <p>Serving times: Monday to Friday, 11:00 AM - 2:00 PM</p>
+      <p>Daily specials: Check our social media for updates!</p>
+      <button id="toggle-details">Visa mer</button>
+      <div id="buffet-details" class="hidden">
+        <p>Price for adults: 150 kr</p>
+        <p>Price for children: 75 kr</p>
+        <p>Optional add-ons: Drinks (20 kr), Desserts (30 kr)</p>
+      </div>
+    </section>
+
+    <!-- Price List Section -->
+    <section id="price-list">
+      <h2>Price List</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Dish</th>
+            <th>Price</th>
+            <th>Allergens</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Rows will be populated dynamically by JavaScript -->
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="contact-info">
+        <p>Email: info@restauranggurka.se</p>
+        <p>Phone: +46 123 456 789</p>
+        <p>Address: Engelbrektsgatan 1, 21133, Malmö</p>
+      </div>
+      <div class="social-media">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="https://x.com/realdonaldtrump"
+          ><i class="fab fa-twitter"></i
+        ></a>
+      </div>
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d473.80218879658287!2d12.997480883292292!3d55.60556856461478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ssv!2sse!4v1742304029843!5m2!1ssv!2sse"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <p class="copyright">
+        &copy; 2025 Restaurang Gurka. All rights reserved.
+      </p>
+    </footer>
+    <a href="https://x.com/realdonaldtrump"> WHAT ARE U</a>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
